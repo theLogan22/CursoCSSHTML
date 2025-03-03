@@ -1,0 +1,167 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,600;1,600&display=swap');
+
+/* Definindo as cores em uma variavel para usar elas globalmente */
+:root{
+    --cor-primaria :#000000;
+    --cor-secundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+    --cor-houver:#272727;
+
+
+    --font-primaria:'Krona One', sans-serif;
+    --font-secundaria:'Montserrat', sans-serif;
+}
+
+
+
+/* Reset Css zera todos os elementos padrão o * seleciona todas as tag */
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    /* height: 100vh; */
+    box-sizing: border-box;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 0% 10%;
+
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+
+}
+
+.cabecalho__menu__lik{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    color: var(--cor-terciaria);
+    font-weight: 600;
+    text-decoration: none;
+
+}
+
+
+/* cliar um seletro qe seria aclasse que é acessada pot ."onto" */
+.titulo-texto{
+    color: var(--cor-terciaria);
+}
+.titulo-texto:hover{
+    color: aliceblue;
+    background-color: var(--cor-terciaria);
+  
+}
+
+.apresentacao{
+    display: flex;
+    align-items: center;
+    counter-reset: none;
+    padding: 5% 10%;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+.apresentacao__conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* 1 rem === 16px */
+.apresentacao__conteudo_titulo{
+    font-family: var(--font-primaria);
+    font-size: 2.25rem;
+}
+
+.apresentacao__conteudo_texto{
+    font-family: var(--font-secundaria);
+    font-size: 1.5rem;
+    
+}
+
+.imagem__carros{
+    width: 50%;
+}
+.apresentacao__links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+.apresentacao__links_subtitulo{
+    font-family: var(--font-primaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+   
+}
+
+.apresentacao__links__navegacao{
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor-terciaria) ;
+    background-color: transparent;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 2.25rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--cor-secundaria);
+    font-family: var(--font-secundaria);
+
+}
+
+.apresentacao_imagem{
+    width: 50%;
+}
+
+.apresentacao__links__link:hover{
+    background-color: var(--cor-houver);
+}
+
+.rodape{
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    font-family: var(--font-secundaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media (max-width:1400px) {
+
+
+    .cabecalho{
+        padding: 6%;
+    
+    }
+
+    .cabecalho__menu{
+        justify-content: center;
+    }
+
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo{
+        width: auto;
+    }
+}
+
+
